@@ -1,0 +1,265 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Prasoon Sahoo | Porsche Story Portfolio</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+  <div class="progress" aria-hidden="true">
+    <div class="progress__bar" id="progressBar"></div>
+  </div>
+
+  <!-- NAVBAR -->
+  <header id="header" data-scrolled="false">
+    <div class="container">
+      <nav class="nav" aria-label="Primary navigation">
+        <a class="brand" href="#stage1" aria-label="Go to top">
+          <span class="brand__mark"><i class="fa-solid fa-flag-checkered"></i></span>
+          <span>Prasoon</span>
+        </a>
+        <div class="navlinks">
+          <a href="#stage1">Home</a>
+          <a href="#stage2">About</a>
+          <a href="#stage3">Education</a>
+          <a href="#stage4">Skills</a>
+          <a href="#stage5">Contact</a>
+
+        </div>
+        <button class="hamburger" id="hamburger" aria-label="Open menu" aria-expanded="false">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+      </nav>
+    </div>
+  </header>
+
+  <!-- MOBILE DRAWER -->
+  <div class="drawer" id="drawer" data-open="false" aria-hidden="true">
+    <div class="drawer__panel" role="dialog" aria-label="Mobile navigation">
+      <div class="drawer__links">
+        <a href="#stage1" class="drawerLink">Home</a>
+        <a href="#stage2" class="drawerLink">About</a>
+        <a href="#stage3" class="drawerLink">Education</a>
+        <a href="#stage4" class="drawerLink">Skills</a>
+        <a href="#stage5" class="drawerLink">License</a>
+      </div>
+    </div>
+  </div>
+
+  <main>
+
+    <!-- STAGE 1 — HERO -->
+    <section class="hero section" id="stage1">
+      <div class="container">
+        <div class="hero__strip reveal">
+          <div class="hero__grid">
+            <div class="hero__copy">
+              <span class="kicker"><i class="fa-solid fa-car-side"></i> Porsche Story Portfolio</span>
+              <h1>Prasoon Sahoo</h1>
+              <p>Fueled by speed and engineered for precision. Relentless in upgrades, sharp in execution. Always chasing the next lap toward mastery.</p>
+              <div class="hero__actions">
+                <a class="btn btn--black" href="#stage2"><i class="fa-solid fa-arrow-down"></i> Start the Story</a>
+                <a class="btn" href="#stage5"><i class="fa-regular fa-id-card"></i> Get the License</a>
+              </div>
+            </div>
+            <div class="hero__carWrap">
+              <img class="hero__car" src="images/car3.jpeg" alt="Hero Porsche car" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- STAGE 2 — ABOUT -->
+    <section class="about section" id="stage2">
+      <div class="container">
+        <div class="about__panel reveal">
+          <div class="about__grid">
+            <div class="about__text">
+              <span class="kicker"><i class="fa-regular fa-user"></i> About Me</span>
+              <h2>Minimal. Personal. Engineered.</h2>
+              <p>
+                I'm Prasoon Sahoo, a CSE student at Sikhya O Anusandhan (ITER), focused on clean
+                software engineering and premium UI. I build projects using Python, Java, and modern
+                web technologies with Django. I care about structure, readability, and performance —
+                so every section looks intentional and feels smooth.
+              </p>
+            </div>
+            <div class="photoU">
+              <div class="photoU__grid">
+                <div class="ph ph--vertical">
+                  <img src="images/about1.jpeg" alt="About photo 1">
+                </div>
+                <div style="display:grid; gap:10px;">
+                  <div class="ph ph--h">
+                    <img src="images/about2.jpeg" alt="About photo 2">
+                  </div>
+                  <div class="ph ph--h">
+                    <img src="images/about3.jpeg" alt="About photo 3">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+<!-- STAGE 3 — EDUCATION -->
+<section class="edu section" id="stage3">
+  <div class="container">
+    <div class="edu__wrap reveal">
+      <div class="edu__head">
+        <span class="kicker"><i class="fa-solid fa-road"></i> Education Journey</span>
+        <h2>Three stops. One story.</h2>
+        <p class="lead">
+          Click each stop to view photos and the story from that phase.
+        </p>
+      </div>
+
+      <div class="edu__body">
+        <div class="roadArea">
+
+          <svg class="roadSvg" viewBox="0 0 500 560" preserveAspectRatio="xMidYMid meet">
+
+            <path d="M100,490 C100,490 140,410 180,350 C220,290 200,250 240,200 C280,150 320,140 355,100 C375,78 400,62 420,50"
+              fill="none" stroke="#1a1a1a" stroke-width="22" stroke-linecap="round"/>
+
+            <!-- 10th -->
+            <circle class="stopPoint" data-stop="10th"
+              cx="100" cy="490" r="24"
+              fill="#fff" stroke="#1a1a1a" stroke-width="3"/>
+
+            <!-- 12th -->
+            <circle class="stopPoint" data-stop="12th"
+              cx="238" cy="204" r="24"
+              fill="#fff" stroke="#1a1a1a" stroke-width="3"/>
+
+            <!-- College -->
+            <circle class="stopPoint" data-stop="college"
+              cx="420" cy="50" r="24"
+              fill="#fff" stroke="#1a1a1a" stroke-width="3"/>
+
+            <text x="132" y="486" font-size="13" font-weight="700">10th</text>
+            <text x="132" y="502" font-size="10" fill="#888">D.A.V</text>
+
+            <text x="270" y="200" font-size="13" font-weight="700">12th</text>
+            <text x="270" y="216" font-size="10" fill="#888">Bridgewell</text>
+
+            <text x="420" y="86" font-size="13" font-weight="700">College</text>
+            <text x="420" y="102" font-size="10" fill="#888">ITER</text>
+
+          </svg>
+
+        </div>
+
+        <div class="eduPanel">
+  <h3 id="eduTitle">10th — D.A.V Public School, Pokhariput</h3>
+  <p id="eduText">My 10th grade built my academic discipline and focus.</p>
+  <div class="gallery" id="eduGallery"></div>
+</div>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+
+    <!-- STAGE 4 — SKILLS -->
+    <section class="skills section" id="stage4">
+      <div class="container">
+        <div class="reveal">
+          <span class="kicker"><i class="fa-solid fa-gear"></i> Skill Tire</span>
+          <h2>Hover to pause. Click a segment.</h2>
+        </div>
+
+        <div class="skills__grid" style="margin-top:16px;">
+          <div class="wheelWrap reveal" data-delay="1">
+            <div class="wheel" id="wheel" style="background-image:url('images/tire3.jpeg');">
+              <button class="seg" data-pos="0" data-skill="Python"><i class="fa-brands fa-python"></i></button>
+              <button class="seg" data-pos="1" data-skill="Java"><i class="fa-brands fa-java"></i></button>
+              <button class="seg" data-pos="2" data-skill="JavaScript"><i class="fa-brands fa-js"></i></button>
+              <button class="seg" data-pos="3" data-skill="HTML"><i class="fa-brands fa-html5"></i></button>
+              <button class="seg" data-pos="4" data-skill="CSS"><i class="fa-brands fa-css3-alt"></i></button>
+              <button class="seg" data-pos="5" data-skill="Django"><i class="fa-solid fa-leaf"></i></button>
+              <button class="seg" data-pos="6" data-skill="Assembly"><i class="fa-solid fa-microchip"></i></button>
+              <button class="seg" data-pos="7" data-skill="Backend"><i class="fa-solid fa-database"></i></button>
+            </div>
+          </div>
+
+          <div class="skillsPanel reveal" data-delay="2">
+            <h3 id="skillTitle">Python</h3>
+            <p id="skillDesc">Automation, scripting, problem-solving.</p>
+            <div class="tagRow" id="skillTags"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- STAGE 5 — CONTACT -->
+<section class="contact section" id="stage5">
+  <div class="container">
+
+    <div class="reveal">
+      <span class="kicker">
+        <i class="fa-solid fa-flag-checkered"></i> Final Lap
+      </span>
+      <h2>Let’s Connect.</h2>
+      <p class="lead">
+        Reach out for collaborations, opportunities, or technical discussions.
+      </p>
+    </div>
+
+    <div class="licenseWrap reveal" style="margin-top:20px;">
+      <div class="licenseTop">
+        <strong>CONTACT DETAILS</strong>
+      </div>
+
+      <div class="licenseBody" style="grid-template-columns:1fr; text-align:center;">
+
+        <div class="contactRow">
+  <a class="circleLink" href="mailto:ariesvoldigord@gmail.com">
+    <i class="fa-solid fa-envelope"></i>
+  </a>
+
+  <a class="circleLink" href="https://www.linkedin.com/in/prasoon-sahoo-b67690380" target="_blank">
+    <i class="fa-brands fa-linkedin"></i>
+  </a>
+
+  <a class="circleLink" href="https://github.com/prasoon-06" target="_blank">
+    <i class="fa-brands fa-github"></i>
+  </a>
+
+  <a class="circleLink" href="https://www.instagram.com/krish_grim" target="_blank">
+    <i class="fa-brands fa-instagram"></i>
+  </a>
+</div>
+
+        </div>
+
+      </div>
+    </div>
+
+    <footer style="margin-top:30px;">
+      &copy; <span id="year"></span> Prasoon Sahoo &bull; Porsche Story Portfolio
+    </footer>
+
+  </div>
+</section>
+
+
+  </main>
+
+  <script src="js/app.js"></script>
+
+</body>
+</html>
